@@ -1,5 +1,6 @@
 from groq import Groq
 import os
+from typing import Iterator
 
 class GroqProvider():
 
@@ -15,7 +16,7 @@ class GroqProvider():
         self.OUTPUT_RATE = 0.60
         
 
-    def call(self, user_prompt: str, history: list ) -> str:
+    def call(self, user_prompt: str, history: list ) -> Iterator[str]:
 
         history.append({"role": "user", "content": user_prompt})
         stream = self._client.chat.completions.create(
@@ -35,6 +36,7 @@ class GroqProvider():
             content = chunk.choices[0].delta.content
             if content:
                 ai_reply += content
+                yield content  # Yielding the content as it arrives
             if chunk.x_groq and chunk.x_groq.usage:
                 usage = chunk.x_groq.usage
                 usage_map["prompt_tokens"] = usage_map["prompt_tokens"] + usage.prompt_tokens
@@ -50,4 +52,4 @@ class GroqProvider():
         print(f"Output Tokens (Completion): {usage_map["completion_tokens"]}")
         print(f"Total Tokens: {usage_map["completion_tokens"] + usage_map["prompt_tokens"]}")
         print(f"Total Cost: {usage_map["est_cost"]:.6f} USD")
-        return ai_reply
+        

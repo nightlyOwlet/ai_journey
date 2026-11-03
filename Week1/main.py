@@ -10,7 +10,7 @@ def main():
     with open("system_prompt.txt", "r", encoding="utf-8") as file:
         content = file.read()
         conversation_history.append({"role": "system", "content": content})
-        
+
     groq_provider = GroqProvider()
 
     while True:
@@ -23,8 +23,8 @@ def main():
             break  # Exits the loop immediately
             
         
-        resp = groq_provider.call(user_input, conversation_history)
-        print(resp)
+        for piece in groq_provider.call(user_input, conversation_history):
+            print(piece, end="", flush=True)
 
 # This starts the script
 if __name__ == "__main__":
