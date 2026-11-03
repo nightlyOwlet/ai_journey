@@ -12,7 +12,7 @@ class GroqProvider():
         self._model = os.getenv("GROQ_MODEL")
         
 
-    def call(self, user_prompt: str, history: list ):
+    def call(self, user_prompt: str, history: list ) -> str:
 
         history.append({"role": "user", "content": user_prompt})
         stream = self._client.chat.completions.create(
@@ -27,7 +27,7 @@ class GroqProvider():
             content = chunk.choices[0].delta.content
             if content:
                 ai_reply += content
-                print(content, end="", flush=True)
-                
         history.append({"role": "assistant", "content": ai_reply})
+
+        return ai_reply
         
