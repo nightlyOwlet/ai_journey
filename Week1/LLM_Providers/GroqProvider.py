@@ -22,12 +22,22 @@ class GroqProvider():
             stream=True
         )
         ai_reply = ''
-        
+        usage_map = {
+            'prompt_tokens': 0,
+            'completion_tokens': 0
+        }
+
         for chunk in stream:
             content = chunk.choices[0].delta.content
             if content:
                 ai_reply += content
+            if chunk.x_groq and chunk.x_groq.usage:
+                usage = chunk.x_groq.usage
+                usage_map["prompt_tokens"] = usage_map["prompt_tokens"] + usage.prompt_tokens
+                usage_map["completion_tokens"] = usage_map["completion_tokens"] + usage.completion_tokens
         history.append({"role": "assistant", "content": ai_reply})
 
+        print(f"Input Tokens (Prompt): {usage_map["prompt_tokens"]}")
+        print(f"Output Tokens (Completion): {usage_map["completion_tokens"]}")
+        print(f"Total Tokens: {usage_map["completion_tokens"] + usage_map["prompt_tokens"]}")
         return ai_reply
-        
