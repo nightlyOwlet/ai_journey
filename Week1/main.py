@@ -10,6 +10,8 @@ def main():
     with open("system_prompt.txt", "r", encoding="utf-8") as file:
         content = file.read()
         conversation_history.append({"role": "system", "content": content})
+        
+    groq_provider = GroqProvider()
 
     while True:
         # 1. Wait for user input
@@ -20,7 +22,7 @@ def main():
             print("Goodbye!")
             break  # Exits the loop immediately
             
-        groq_provider = GroqProvider()
+        
         resp = groq_provider.call(user_input, conversation_history)
         print(resp)
 

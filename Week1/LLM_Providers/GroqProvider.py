@@ -10,6 +10,9 @@ class GroqProvider():
             raise RuntimeError("GROQ_API_KEY is not set in environment.")
         self._client = Groq(api_key=api_key)
         self._model = os.getenv("GROQ_MODEL")
+
+        self.INPUT_RATE = 0.15
+        self.OUTPUT_RATE = 0.60
         
 
     def call(self, user_prompt: str, history: list ) -> str:
@@ -24,9 +27,10 @@ class GroqProvider():
         ai_reply = ''
         usage_map = {
             'prompt_tokens': 0,
-            'completion_tokens': 0
+            'completion_tokens': 0,
+            'est_cost': 0.0
         }
-
+        
         for chunk in stream:
             content = chunk.choices[0].delta.content
             if content:
@@ -35,9 +39,15 @@ class GroqProvider():
                 usage = chunk.x_groq.usage
                 usage_map["prompt_tokens"] = usage_map["prompt_tokens"] + usage.prompt_tokens
                 usage_map["completion_tokens"] = usage_map["completion_tokens"] + usage.completion_tokens
+
+                input_cost = (usage_map["prompt_tokens"] / 1_000_000) * self.INPUT_RATE
+                output_cost = (usage_map["completion_tokens"] / 1_000_000) * self.OUTPUT_RATE
+                total_cost = input_cost + output_cost
+                usage_map["est_cost"] = usage_map["est_cost"] + total_cost
         history.append({"role": "assistant", "content": ai_reply})
 
         print(f"Input Tokens (Prompt): {usage_map["prompt_tokens"]}")
         print(f"Output Tokens (Completion): {usage_map["completion_tokens"]}")
         print(f"Total Tokens: {usage_map["completion_tokens"] + usage_map["prompt_tokens"]}")
+        print(f"Total Cost: {usage_map["est_cost"]:.6f} USD")
         return ai_reply
