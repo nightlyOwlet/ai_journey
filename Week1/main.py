@@ -1,4 +1,4 @@
-import os
+import os 
 from dotenv import load_dotenv
 from LLM_Providers.GroqProvider import GroqProvider
 
@@ -6,10 +6,11 @@ def main():
     """Main execution function for the script."""
     load_dotenv()
 
-    conversation_history = [
-            {"role": "system", "content": "You are a helpful and concise AI assistant."}
-        ]
-    
+    conversation_history = []
+    with open("system_prompt.txt", "r", encoding="utf-8") as file:
+        content = file.read()
+        conversation_history.append({"role": "system", "content": content})
+
     while True:
         # 1. Wait for user input
         user_input = input("Enter something (or type 'exit' to quit): ")
