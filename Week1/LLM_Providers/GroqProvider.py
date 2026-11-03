@@ -21,10 +21,13 @@ class GroqProvider():
             messages= history,
             stream=True
         )
+        ai_reply = ''
+        
         for chunk in stream:
             content = chunk.choices[0].delta.content
             if content:
-                ai_reply = content
-                history.append({"role": "assistant", "content": ai_reply})
+                ai_reply += content
                 print(content, end="", flush=True)
+                
+        history.append({"role": "assistant", "content": ai_reply})
         
