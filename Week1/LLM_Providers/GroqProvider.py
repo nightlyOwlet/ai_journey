@@ -1,7 +1,6 @@
 from groq import Groq
 import os
 
-
 class GroqProvider():
 
     def __init__(self):
