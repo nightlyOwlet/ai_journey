@@ -1,14 +1,11 @@
 from pathlib import Path
-from dotenv import load_dotenv
-from LLM_Providers.GroqProvider import GroqProvider
+from Helper.LLM_Providers.GroqProvider import GroqProvider
 
 SYSTEM_PROMPT_PATH = Path(__file__).parent / "system_prompt.txt"
 
 
 def main():
     """Main execution function for the script."""
-    load_dotenv()
-
     conversation_history = []
     content = SYSTEM_PROMPT_PATH.read_text(encoding="utf-8")
     conversation_history.append({"role": "system", "content": content})
