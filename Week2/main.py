@@ -2,13 +2,19 @@
 from typing import Optional
 from pydantic import BaseModel, Field, field_validator
 from datetime import date, datetime
+from enum import Enum
+
+class CommercialLicense(Enum):
+    Yes = "yes"
+    No = "no"
+    Unclear = "na"
 
 class PastEmployer(BaseModel):
     name: str
     position: str
     start_month: Optional[str] = Field(None, description="Start month in MM-YYYY format")
     end_month: Optional[str] = Field(None, description="End month in MM-YYYY format")
-    commercial_driving: bool
+    commercial_driving: CommercialLicense
     reason_for_leaving: Optional[str] = Field(None, description="Reason for leaving the employer")
 
     @field_validator("start_month", "end_month",  mode="before")
@@ -44,7 +50,7 @@ def main():
                 position="Driver",
                 start_month="01-2020",
                 end_month="06-2021",
-                commercial_driving=True,
+                commercial_driving=CommercialLicense.Yes,
                 reason_for_leaving="Career advancement"
             ),
             PastEmployer(
@@ -52,7 +58,7 @@ def main():
                 position="Delivery Driver",
                 start_month="05-2018",
                 end_month="12-2019",
-                commercial_driving=False,
+                commercial_driving=CommercialLicense.Unclear,
                 reason_for_leaving="Relocation"
             )
         ]
