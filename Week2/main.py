@@ -4,36 +4,23 @@ from pydantic import BaseModel, Field, field_validator
 from datetime import date, datetime
 from enum import Enum
 
-class CommercialLicense(Enum):
+class CommercialDriving(Enum):
     Yes = "yes"
     No = "no"
-    Unclear = "na"
+    Unclear = "unclear"
+
+class YearMonth(BaseModel):
+    year: int = Field(..., ge=1950, le=2026)
+    month: Optional[int] = Field(..., ge=1, le=12)
 
 class PastEmployer(BaseModel):
     name: str
     position: str
-    start_month: Optional[str] = Field(None, description="Start month in MM-YYYY format")
-    end_month: Optional[str] = Field(None, description="End month in MM-YYYY format")
-    commercial_driving: CommercialLicense
-    reason_for_leaving: Optional[str] = Field(None, description="Reason for leaving the employer")
+    start_month: Optional[YearMonth] = Field(..., description="Month and year the driver started this job; month null if only the year is given")
+    end_month: Optional[YearMonth] = Field(..., description="Month and year the driver ended this job; month null if only the year is given")
+    commercial_driving: CommercialDriving = Field(..., description="Driving was part of the job, whether or not a CDL was required; 'unclear' if the source doesn't say")
+    reason_for_leaving: Optional[str] = Field(..., description="Reason for leaving the employer")
 
-    @field_validator("start_month", "end_month",  mode="before")
-    @classmethod
-    def validate_mm_yyyy(cls, value):
-        # If it's already a date object, pass it through
-        if isinstance(value, date):
-            return value
-        
-        # If it's a string, try parsing it from the MM-YYYY format
-        if isinstance(value, str):
-            try:
-                # parsed date defaults to the 1st day of that month
-                return str(datetime.strptime(value, "%m-%Y").date())
-            except ValueError:
-                raise ValueError("Date must be in MM-YYYY format (e.g., 12-2026)")
-        
-        if value is None:
-            return None
 
 class DriverProfile(BaseModel):
     # Required fields
@@ -48,17 +35,17 @@ def main():
             PastEmployer(
                 name="Company A",
                 position="Driver",
-                start_month="01-2020",
-                end_month="06-2021",
-                commercial_driving=CommercialLicense.Yes,
+                start_month=YearMonth(year=2020, month=1),
+                end_month=YearMonth(year=2022, month=6),
+                commercial_driving=CommercialDriving.Yes,
                 reason_for_leaving="Career advancement"
             ),
             PastEmployer(
                 name="Company B",
                 position="Delivery Driver",
-                start_month="05-2018",
-                end_month="12-2019",
-                commercial_driving=CommercialLicense.Unclear,
+                start_month=YearMonth(year=2018, month=5),
+                end_month=YearMonth(year=2019, month=12),
+                commercial_driving=CommercialDriving.Unclear,
                 reason_for_leaving="Relocation"
             )
         ]
