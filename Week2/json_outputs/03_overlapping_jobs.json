@@ -1,0 +1,56 @@
+{
+  "name": "Thomas \"Tommy\" Brennan",
+  "history": [
+    {
+      "type": "employment",
+      "name": "Northeast Parcel Express",
+      "position": "Pickup & Delivery Driver",
+      "is_current": false,
+      "dates_as_written": "January 2021 – October 2026",
+      "start_month": {
+        "year": 2021,
+        "month": 1
+      },
+      "end_month": {
+        "year": 2026,
+        "month": 10
+      },
+      "license_used": "cdl",
+      "reason_for_leaving": null
+    },
+    {
+      "type": "employment",
+      "name": "Brennan Hauling",
+      "position": "Dump truck driver, part-time",
+      "is_current": false,
+      "dates_as_written": "June 2022 – March 2024",
+      "start_month": {
+        "year": 2022,
+        "month": 6
+      },
+      "end_month": {
+        "year": 2024,
+        "month": 3
+      },
+      "license_used": "unclear",
+      "reason_for_leaving": null
+    },
+    {
+      "type": "employment",
+      "name": "Coastal Freight Systems",
+      "position": "Linehaul Driver",
+      "is_current": false,
+      "dates_as_written": "March 2018 – February 2021",
+      "start_month": {
+        "year": 2018,
+        "month": 3
+      },
+      "end_month": {
+        "year": 2021,
+        "month": 2
+      },
+      "license_used": "unclear",
+      "reason_for_leaving": "moved to day shift at Northeast Parcel"
+    }
+  ]
+}

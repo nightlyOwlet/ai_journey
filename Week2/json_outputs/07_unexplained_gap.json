@@ -1,0 +1,56 @@
+{
+  "name": "Sandra Whitfield",
+  "history": [
+    {
+      "type": "employment",
+      "name": "Blue Ridge Distribution",
+      "position": "Dedicated Route Driver",
+      "is_current": false,
+      "dates_as_written": "September 2025 – October 2026",
+      "start_month": {
+        "year": 2025,
+        "month": 9
+      },
+      "end_month": {
+        "year": 2026,
+        "month": 10
+      },
+      "license_used": "cdl",
+      "reason_for_leaving": "Route eliminated"
+    },
+    {
+      "type": "employment",
+      "name": "Old Dominion Carriers",
+      "position": "Regional Driver",
+      "is_current": false,
+      "dates_as_written": "April 2019 – November 2023",
+      "start_month": {
+        "year": 2019,
+        "month": 4
+      },
+      "end_month": {
+        "year": 2023,
+        "month": 11
+      },
+      "license_used": "cdl",
+      "reason_for_leaving": "Personal reasons"
+    },
+    {
+      "type": "employment",
+      "name": "Shenandoah Bus Lines",
+      "position": "Motorcoach Operator",
+      "is_current": false,
+      "dates_as_written": "June 2015 – March 2019",
+      "start_month": {
+        "year": 2015,
+        "month": 6
+      },
+      "end_month": {
+        "year": 2019,
+        "month": 3
+      },
+      "license_used": "cdl",
+      "reason_for_leaving": "Switched to freight for better pay"
+    }
+  ]
+}

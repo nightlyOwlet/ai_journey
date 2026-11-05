@@ -1,0 +1,64 @@
+{
+  "name": "jose luis martinz",
+  "history": [
+    {
+      "type": "employment",
+      "name": "JB Hunt Trnsprt",
+      "position": "OTR drvr",
+      "is_current": false,
+      "dates_as_written": "frm 11/21 til 8/26",
+      "start_month": {
+        "year": 2021,
+        "month": 11
+      },
+      "end_month": {
+        "year": 2026,
+        "month": 8
+      },
+      "license_used": "cdl",
+      "reason_for_leaving": "wnt home more, wife had baby"
+    },
+    {
+      "type": "employment",
+      "name": "wrner enterprses (werner??)",
+      "position": "reg drvr dry vn + some flt bd",
+      "is_current": false,
+      "dates_as_written": "2/2019 - 10/21",
+      "start_month": {
+        "year": 2019,
+        "month": 2
+      },
+      "end_month": {
+        "year": 2021,
+        "month": 10
+      },
+      "license_used": "unclear",
+      "reason_for_leaving": "dispatcher prblms, not enuf mi/wk"
+    },
+    {
+      "type": "employment",
+      "name": "TX Hvy Haul & Rig svcs",
+      "position": "oilfld hot shot drvr",
+      "is_current": false,
+      "dates_as_written": "approx 2016 or 2017 thru jan 2019",
+      "start_month": null,
+      "end_month": {
+        "year": 2019,
+        "month": 1
+      },
+      "license_used": "cdl",
+      "reason_for_leaving": "oil bust slowed thngs dwn, got laid off"
+    },
+    {
+      "type": "employment",
+      "name": "my uncles shp (auto repair)",
+      "position": null,
+      "is_current": false,
+      "dates_as_written": null,
+      "start_month": null,
+      "end_month": null,
+      "license_used": "unclear",
+      "reason_for_leaving": null
+    }
+  ]
+}

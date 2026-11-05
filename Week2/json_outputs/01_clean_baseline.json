@@ -1,0 +1,56 @@
+{
+  "name": "Marcus Reyes",
+  "history": [
+    {
+      "type": "employment",
+      "name": "Swift Line Freight LLC",
+      "position": "Class A Over-the-Road Driver",
+      "is_current": false,
+      "dates_as_written": "03/2022 – 09/2026",
+      "start_month": {
+        "year": 2022,
+        "month": 3
+      },
+      "end_month": {
+        "year": 2026,
+        "month": 9
+      },
+      "license_used": "cdl",
+      "reason_for_leaving": "Seeking regional routes closer to home"
+    },
+    {
+      "type": "employment",
+      "name": "Desert Valley Logistics",
+      "position": "Regional Truck Driver (CDL-A)",
+      "is_current": false,
+      "dates_as_written": "06/2019 – 02/2022",
+      "start_month": {
+        "year": 2019,
+        "month": 6
+      },
+      "end_month": {
+        "year": 2022,
+        "month": 2
+      },
+      "license_used": "cdl",
+      "reason_for_leaving": "Company downsized regional fleet"
+    },
+    {
+      "type": "employment",
+      "name": "Pinnacle Building Supply",
+      "position": "Local Delivery Driver (CDL-B)",
+      "is_current": false,
+      "dates_as_written": "01/2017 – 05/2019",
+      "start_month": {
+        "year": 2017,
+        "month": 1
+      },
+      "end_month": {
+        "year": 2019,
+        "month": 5
+      },
+      "license_used": "cdl",
+      "reason_for_leaving": "Obtained Class A license"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "name": "Liam O'Connell",
+  "history": [
+    {
+      "type": "self_employed",
+      "name": "O'Connell Trucking LLC",
+      "position": "Owner-operator, leased on to Landstar",
+      "is_current": true,
+      "dates_as_written": "Spring 2023 – present",
+      "start_month": {
+        "year": 2023,
+        "month": null
+      },
+      "end_month": null,
+      "license_used": "unclear",
+      "reason_for_leaving": null
+    },
+    {
+      "type": "employment",
+      "name": "Prime Inc.",
+      "position": "Company Driver",
+      "is_current": false,
+      "dates_as_written": "04/05/2020 – 03/02/2023",
+      "start_month": {
+        "year": 2020,
+        "month": null
+      },
+      "end_month": {
+        "year": 2023,
+        "month": null
+      },
+      "license_used": "cdl",
+      "reason_for_leaving": null
+    },
+    {
+      "type": "employment",
+      "name": "Interstate Moving & Storage",
+      "position": "Household goods driver",
+      "is_current": false,
+      "dates_as_written": "Summer '17 – early 2020",
+      "start_month": {
+        "year": 2017,
+        "month": null
+      },
+      "end_month": {
+        "year": 2020,
+        "month": null
+      },
+      "license_used": "unclear",
+      "reason_for_leaving": null
+    },
+    {
+      "type": "employment",
+      "name": null,
+      "position": "driving lorries in Ireland",
+      "is_current": false,
+      "dates_as_written": "roughly 2013–2017",
+      "start_month": {
+        "year": 2013,
+        "month": null
+      },
+      "end_month": {
+        "year": 2017,
+        "month": null
+      },
+      "license_used": "unclear",
+      "reason_for_leaving": null
+    }
+  ]
+}

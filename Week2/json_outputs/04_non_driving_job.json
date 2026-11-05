@@ -1,0 +1,73 @@
+{
+  "name": "Priya Nandakumar",
+  "history": [
+    {
+      "type": "employment",
+      "name": "Redline Transport Inc.",
+      "position": "Regional Driver",
+      "is_current": false,
+      "dates_as_written": "From: 04/2024  To: 10/2026",
+      "start_month": {
+        "year": 2024,
+        "month": 4
+      },
+      "end_month": {
+        "year": 2026,
+        "month": 10
+      },
+      "license_used": "cdl",
+      "reason_for_leaving": "Company closed Columbus terminal."
+    },
+    {
+      "type": "employment",
+      "name": "Amazon Fulfillment Center CMH2",
+      "position": "Warehouse Associate / Forklift Operator",
+      "is_current": false,
+      "dates_as_written": "From: 09/2022  To: 03/2024",
+      "start_month": {
+        "year": 2022,
+        "month": 9
+      },
+      "end_month": {
+        "year": 2024,
+        "month": 3
+      },
+      "license_used": "no_driving",
+      "reason_for_leaving": "Completed CDL school and got hired at Redline."
+    },
+    {
+      "type": "school",
+      "name": "Buckeye CDL Academy",
+      "position": "Student (not employment)",
+      "is_current": false,
+      "dates_as_written": "From: 01/2024  To: 03/2024",
+      "start_month": {
+        "year": 2024,
+        "month": 1
+      },
+      "end_month": {
+        "year": 2024,
+        "month": 3
+      },
+      "license_used": "unclear",
+      "reason_for_leaving": null
+    },
+    {
+      "type": "employment",
+      "name": "Papa Giovanni's Pizza",
+      "position": "Delivery driver (personal car)",
+      "is_current": false,
+      "dates_as_written": "From: 2020  To: 2022",
+      "start_month": {
+        "year": 2020,
+        "month": null
+      },
+      "end_month": {
+        "year": 2022,
+        "month": null
+      },
+      "license_used": "non_cdl",
+      "reason_for_leaving": "Got the warehouse job."
+    }
+  ]
+}

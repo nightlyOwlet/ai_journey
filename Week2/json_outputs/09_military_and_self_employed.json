@@ -1,0 +1,56 @@
+{
+  "name": "Andre Coleman",
+  "history": [
+    {
+      "type": "military",
+      "name": "U.S. Army",
+      "position": "88M Motor Transport Operator, rank SGT",
+      "is_current": false,
+      "dates_as_written": "07/2014 – 06/2020",
+      "start_month": {
+        "year": 2014,
+        "month": 7
+      },
+      "end_month": {
+        "year": 2020,
+        "month": 6
+      },
+      "license_used": "unclear",
+      "reason_for_leaving": "Honorable discharge, end of enlistment."
+    },
+    {
+      "type": "self_employed",
+      "name": "Coleman Courier Services",
+      "position": "Independent courier / Sprinter van (non-CDL)",
+      "is_current": false,
+      "dates_as_written": "08/2020 – 12/2021",
+      "start_month": {
+        "year": 2020,
+        "month": 8
+      },
+      "end_month": {
+        "year": 2021,
+        "month": 12
+      },
+      "license_used": "non_cdl",
+      "reason_for_leaving": "Pursued civilian CDL (SDLAP military skills waiver)."
+    },
+    {
+      "type": "employment",
+      "name": "Lone Star Petroleum Distributors",
+      "position": "Fuel Delivery Driver",
+      "is_current": false,
+      "dates_as_written": "01/2022 – 09/2026",
+      "start_month": {
+        "year": 2022,
+        "month": 1
+      },
+      "end_month": {
+        "year": 2026,
+        "month": 9
+      },
+      "license_used": "cdl",
+      "reason_for_leaving": "Relocating to Austin area"
+    }
+  ]
+}

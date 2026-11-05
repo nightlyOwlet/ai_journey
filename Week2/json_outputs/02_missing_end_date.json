@@ -1,0 +1,53 @@
+{
+  "name": "Danielle Okafor",
+  "history": [
+    {
+      "type": "employment",
+      "name": "Midwest Bulk Carriers",
+      "position": "Tanker Driver",
+      "is_current": true,
+      "dates_as_written": "Started August 2023",
+      "start_month": {
+        "year": 2023,
+        "month": 8
+      },
+      "end_month": null,
+      "license_used": "cdl",
+      "reason_for_leaving": null
+    },
+    {
+      "type": "employment",
+      "name": "Great Lakes Fuel Transport",
+      "position": "Fuel Tanker Driver",
+      "is_current": false,
+      "dates_as_written": "May 2020 to July 2023",
+      "start_month": {
+        "year": 2020,
+        "month": 5
+      },
+      "end_month": {
+        "year": 2023,
+        "month": 7
+      },
+      "license_used": "unclear",
+      "reason_for_leaving": "Left for better home time."
+    },
+    {
+      "type": "employment",
+      "name": "Heartland Moving Co.",
+      "position": "Straight truck driver / mover",
+      "is_current": false,
+      "dates_as_written": "2018 – 2020",
+      "start_month": {
+        "year": 2018,
+        "month": null
+      },
+      "end_month": {
+        "year": 2020,
+        "month": null
+      },
+      "license_used": "unclear",
+      "reason_for_leaving": "wanted to get into tanker work"
+    }
+  ]
+}

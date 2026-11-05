@@ -1,0 +1,56 @@
+{
+  "name": "Rebecca Thornton",
+  "history": [
+    {
+      "type": "employment",
+      "name": "Summit Freightways",
+      "position": "OTR Driver / Driver Trainer",
+      "is_current": false,
+      "dates_as_written": "March 2021 – October 2026",
+      "start_month": {
+        "year": 2021,
+        "month": 3
+      },
+      "end_month": {
+        "year": 2026,
+        "month": 10
+      },
+      "license_used": "cdl",
+      "reason_for_leaving": null
+    },
+    {
+      "type": "employment",
+      "name": "Front Range Express",
+      "position": "OTR Driver",
+      "is_current": false,
+      "dates_as_written": "January 2018 – February 2021",
+      "start_month": {
+        "year": 2018,
+        "month": 1
+      },
+      "end_month": {
+        "year": 2021,
+        "month": 2
+      },
+      "license_used": "cdl",
+      "reason_for_leaving": "1 minor preventable backing incident in 2020, chose to move on"
+    },
+    {
+      "type": "employment",
+      "name": "Rocky Mountain Grocers",
+      "position": "Store Manager",
+      "is_current": false,
+      "dates_as_written": "May 2009 – December 2017",
+      "start_month": {
+        "year": 2009,
+        "month": 5
+      },
+      "end_month": {
+        "year": 2017,
+        "month": 12
+      },
+      "license_used": "unclear",
+      "reason_for_leaving": null
+    }
+  ]
+}
