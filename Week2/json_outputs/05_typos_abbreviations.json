@@ -20,7 +20,7 @@
     },
     {
       "type": "employment",
-      "name": "wrner enterprses (werner??)",
+      "name": "wrner enterprses",
       "position": "reg drvr dry vn + some flt bd",
       "is_current": false,
       "dates_as_written": "2/2019 - 10/21",
@@ -33,7 +33,7 @@
         "month": 10
       },
       "license_used": "unclear",
-      "reason_for_leaving": "dispatcher prblms, not enuf mi/wk"
+      "reason_for_leaving": "lft cuz dispatcher prblms, not enuf mi/wk"
     },
     {
       "type": "employment",
@@ -51,7 +51,7 @@
     },
     {
       "type": "employment",
-      "name": "my uncles shp (auto repair)",
+      "name": "my uncles shp",
       "position": null,
       "is_current": false,
       "dates_as_written": null,

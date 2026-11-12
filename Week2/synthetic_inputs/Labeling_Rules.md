@@ -76,13 +76,15 @@ Example: `approx 2016 or 2017 thru jan 2019` → start null, end {2019, 1}
 Based only on what this entry's own text says.
 - `cdl`: the entry says CDL, CDL-A/B, Class A/B, or a CDL endorsement. If the entry covers both non-CDL and CDL driving, use `cdl`.
 - `non_cdl`: the entry says non-CDL, or the driving was in a personal car.
-- `no_driving`: the entry's duties didn't include driving on public roads. On-property driving (forklift, yard truck) counts as no_driving.
-- `unclear`: they drove but the entry doesn't say whether a CDL was used, even if the vehicle usually needs one (tanker, dump truck, box truck, linehaul). Also for military vehicles, foreign licenses, school, and entries with no details.
+- `no_driving`: the entry itself says driving on public roads wasn't part of it, or limits driving to on-property (forklift, yard truck). A non-driving title alone isn't enough.
+- `unclear`: they drove but the entry doesn't say whether a CDL was used, even if the vehicle usually needs one (tanker, dump truck, box truck, linehaul). Also when the entry doesn't say whether they drove at all, and for military vehicles, foreign licenses, school, and entries with no details.
 
 Example: `Regional Driver (CDL-A)` → cdl
 Example: `oilfld hot shot drvr ... non-cdl at first then got cdl B` → cdl
 Example: `Delivery driver (personal car)` → non_cdl
 Example: `Did not drive on public roads` (forklift) → no_driving
+Example: `Yard Jockey / Shunt Driver (on-property only)` → no_driving
+Example: `Crew Member (mowing, planting)` (says nothing about driving) → unclear
 Example: `Fuel Tanker Driver` → unclear
 Example: `Occasionally drove the store's box truck` → unclear
 

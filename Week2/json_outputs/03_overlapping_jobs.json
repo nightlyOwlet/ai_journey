@@ -4,7 +4,7 @@
     {
       "type": "employment",
       "name": "Northeast Parcel Express",
-      "position": "Pickup & Delivery Driver",
+      "position": "Pickup & Delivery Driver (CDL-A, doubles endorsement)",
       "is_current": false,
       "dates_as_written": "January 2021 – October 2026",
       "start_month": {
@@ -21,7 +21,7 @@
     {
       "type": "employment",
       "name": "Brennan Hauling",
-      "position": "Dump truck driver, part-time",
+      "position": "Dump truck driver",
       "is_current": false,
       "dates_as_written": "June 2022 – March 2024",
       "start_month": {

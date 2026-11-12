@@ -4,7 +4,7 @@
     {
       "type": "employment",
       "name": "Blue Ridge Distribution",
-      "position": "Dedicated Route Driver",
+      "position": "Dedicated Route Driver (CDL-A)",
       "is_current": false,
       "dates_as_written": "September 2025 – October 2026",
       "start_month": {
@@ -21,7 +21,7 @@
     {
       "type": "employment",
       "name": "Old Dominion Carriers",
-      "position": "Regional Driver",
+      "position": "Regional Driver (CDL-A)",
       "is_current": false,
       "dates_as_written": "April 2019 – November 2023",
       "start_month": {
@@ -38,7 +38,7 @@
     {
       "type": "employment",
       "name": "Shenandoah Bus Lines",
-      "position": "Motorcoach Operator",
+      "position": "Motorcoach Operator (CDL-B, Passenger endorsement)",
       "is_current": false,
       "dates_as_written": "June 2015 – March 2019",
       "start_month": {

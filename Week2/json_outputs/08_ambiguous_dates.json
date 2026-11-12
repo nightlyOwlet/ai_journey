@@ -4,7 +4,7 @@
     {
       "type": "self_employed",
       "name": "O'Connell Trucking LLC",
-      "position": "Owner-operator, leased on to Landstar",
+      "position": null,
       "is_current": true,
       "dates_as_written": "Spring 2023 – present",
       "start_month": {
@@ -52,7 +52,7 @@
     {
       "type": "employment",
       "name": null,
-      "position": "driving lorries in Ireland",
+      "position": null,
       "is_current": false,
       "dates_as_written": "roughly 2013–2017",
       "start_month": {
